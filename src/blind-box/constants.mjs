@@ -1,0 +1,11 @@
+export const MONEY_START = 100;
+export const DRAW_LIMIT = 20;
+export const TARGET_COUNT = 5;
+export const FEE_INITIAL = 5;
+export const FEE_AFTER_NOTICE = 10;
+export const NOTICE_AT_DRAW = 9;
+export const SEAL_EVERY = 3;
+export const HIGH_CALORIE = 400;
+export const EXPENSIVE_PRICE = 25;
+export const HEURISTIC_RATIO = 20;
+export const CATEGORIES = ['snack', 'drink', 'staple', 'dessert', 'household'];

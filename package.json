@@ -1,0 +1,17 @@
+{
+  "name": "deepseek-v4.1-flash-1017-blind-box-pov",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Blind-box probe that tests closed-loop vs open-loop agent habits and ambiguity-to-strict readings.",
+  "scripts": {
+    "pov": "node src/run.mjs",
+    "report": "node src/report.mjs",
+    "selftest": "node src/selftest.mjs",
+    "selftest:auction": "node src/team-auction/selftest.mjs",
+    "judge:auction": "node src/team-auction/judge.mjs"
+  },
+  "engines": {
+    "node": ">=22"
+  }
+}

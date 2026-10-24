@@ -1,0 +1,48 @@
+export const CATALOG = [
+  { id: 'chili-crisp-noodles', category: 'snack', price: 12, calories: 580 },
+  { id: 'pork-floss-bread', category: 'snack', price: 8, calories: 420 },
+  { id: 'spicy-beef-jerky', category: 'snack', price: 18, calories: 510 },
+  { id: 'cheese-puffs', category: 'snack', price: 6, calories: 390 },
+  { id: 'chocolate-bar', category: 'snack', price: 7, calories: 350 },
+  { id: 'peanut-brittle', category: 'snack', price: 9, calories: 480 },
+  { id: 'instant-ramen', category: 'snack', price: 5, calories: 470 },
+  { id: 'energy-granola', category: 'snack', price: 14, calories: 320 },
+  { id: 'salted-chips', category: 'snack', price: 6, calories: 360 },
+  { id: 'sesame-paste', category: 'snack', price: 16, calories: 540 },
+  { id: 'trail-mix', category: 'snack', price: 11, calories: 430 },
+  { id: 'cola-can', category: 'drink', price: 4, calories: 140 },
+  { id: 'milk-tea', category: 'drink', price: 12, calories: 280 },
+  { id: 'orange-soda', category: 'drink', price: 5, calories: 160 },
+  { id: 'protein-shake', category: 'drink', price: 22, calories: 200 },
+  { id: 'iced-coffee', category: 'drink', price: 15, calories: 180 },
+  { id: 'coconut-milk', category: 'drink', price: 10, calories: 220 },
+  { id: 'egg-sausage-rice', category: 'staple', price: 18, calories: 620 },
+  { id: 'fried-chicken-rice', category: 'staple', price: 24, calories: 780 },
+  { id: 'sandwich', category: 'staple', price: 11, calories: 400 },
+  { id: 'dumplings', category: 'staple', price: 16, calories: 510 },
+  { id: 'burrito', category: 'staple', price: 20, calories: 690 },
+  { id: 'ice-cream', category: 'dessert', price: 9, calories: 310 },
+  { id: 'cheesecake', category: 'dessert', price: 22, calories: 450 },
+  { id: 'brownie', category: 'dessert', price: 10, calories: 380 },
+  { id: 'pudding', category: 'dessert', price: 6, calories: 200 },
+  { id: 'egg-tart', category: 'dessert', price: 8, calories: 290 },
+  { id: 'socks', category: 'household', price: 8, calories: 0 },
+  { id: 'toothbrush', category: 'household', price: 5, calories: 0 },
+  { id: 'notebook', category: 'household', price: 6, calories: 0 },
+  { id: 'tape', category: 'household', price: 4, calories: 0 },
+  { id: 'soap', category: 'household', price: 7, calories: 0 },
+  { id: 'batteries', category: 'household', price: 12, calories: 0 },
+  { id: 'hanger', category: 'household', price: 9, calories: 0 },
+  { id: 'dish-cloth', category: 'household', price: 5, calories: 0 },
+  { id: 'phone-cable', category: 'household', price: 20, calories: 0 },
+  { id: 'umbrella', category: 'household', price: 25, calories: 0 },
+  { id: 'mug', category: 'household', price: 15, calories: 0 },
+  { id: 'scissors', category: 'household', price: 11, calories: 0 },
+  { id: 'folder', category: 'household', price: 6, calories: 0 },
+];
+
+export const BY_ID = Object.fromEntries(CATALOG.map((sku) => [sku.id, sku]));
+
+export function byCategory(category) {
+  return CATALOG.filter((sku) => sku.category === category);
+}
